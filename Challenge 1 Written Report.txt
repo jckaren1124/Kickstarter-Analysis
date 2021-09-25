@@ -1,0 +1,33 @@
+# Kickstarting with Excel
+
+## Overview of Project
+Louise would like to create a successful campaign for a play called Fever.  She utilized detailed analyses from previous plays and was able to obtain funding close to her goal amount.  Now, Louise is requesting for additional insights to ensure her play is a success.  Information on campaign outcomes based on launch dates and funding goals will be analyzed.
+
+### Purpose
+The purpose of this project is to locate any trends in campaign outcomes based on launch dates and funding goals.  This will hopefully increase Louise's chances of producing a successful play.
+
+## Analysis and Challenges
+
+### Analysis of Outcomes Based on Launch Date
+The highest number of successful theater productions were launched in May (111).  The success rate slowly decreased as campaigns were launched through the summer and fall months.  December generated the fewest successful productions (37).  A much smaller fluctuation was seen in failed campaigns with the highest number launching in May (52) and fewest failed productions in November (31).  The launch date didn't seem to make much difference for canceled campaigns.  This information is based on Kickstarter theater productions from 2009 to 2017.
+
+### Analysis of Outcomes Based on Goals
+Plays with a goal of less than $1,000 have a 75% chance of becoming successful.  This success rate slowly starts to decrease as the funding goals increase.  When the goal is between $30,000 to $34,999, the success rate starts to increase.  Goals of $45,000 and above have a low chance (less than 20%) of success.  This trend is also supported by failed productions.  Goals of less than $1,000 have a low failure rate (24.19%) and very high failure rates (greater than 80%) correspond to goals of more than $45,000.  This information was analyzed from Kickstarter play campaigns.
+
+### Challenges and Difficulties Encountered
+The biggest challenge of analyzing the dataset is confirming my work when calculating the outcome of plays based on goals while using the countifs function.  My method of confirming accurate calculations was by taking the sum of the goals column for each play outcome and comparing that against the countifs calculation (goal of greater than 0).  I noticed a slight discrepancy for the number of failed plays.  After reviewing for typos and checking the countifs function in each cell, I realized that the goals category does not take into account amounts that equal to $50,000.  After including this data, both sums match.
+
+## Results
+
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+Launch date does not make much of an impact on canceled theater productions. The general trend for successful and failed campaigns are very silimar, but the number is successful productions in May is much higher than failed productions.
+
+- What can you conclude about the Outcomes based on Goals?
+Lower goals can increase rates of play success.  Goals between $35,000 to $40,000 have a 67% chance success rate.
+
+- What are some limitations of this dataset?
+Twice the amount of data is being represented by successful versus failed campaigns, and canceled campaigns only account for less than 3% of the total dataset.
+
+- What are some other possible tables and/or graphs that we could create?
+We can filter the graphs to only show outcomes for theater/plays produced in the country Louise is planning to launch Fever.  This can provide insight on whether location makes a difference in outcomes.
+
